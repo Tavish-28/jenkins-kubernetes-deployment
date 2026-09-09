@@ -5,11 +5,11 @@ pipeline {
   }
   agent any
   stages {
-  stage('Checkout Source') {
-  steps {
-    git branch: 'main', url: 'https://github.com/Tavish-28/jenkins-kubernetes-deployment.git'
-  }
-}}
+    stage('Checkout Source') {
+      steps {
+        git branch: 'main', url: 'https://github.com/Tavish-28/jenkins-kubernetes-deployment.git'
+      }
+    }
     stage('Build image') {
       steps{
         script {
